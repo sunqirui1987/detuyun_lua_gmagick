@@ -1,14 +1,14 @@
-
---³õÊ¼»¯±äÁ¿
-local M = {}
-M.imagevarobj = require("image.imagevar")
-M.imagevarobj.init()
-M.imagevar = M.imagevarobj.image
---Í¼Æ¬´¦Àí
-	--M.imagevar±äÁ¿²ÎÊı¼¯
-	--local_file_cachedir»º´æÄ¿Â¼
-	--local_file_cachepath»º´æÎÄ¼ş
-	--fun ¹¦ÄÜº¯Êı¿â
-local ImageConfig = {}
-local gmagick = require("image.gmagick").new(M.imagevar,img.config.local_file_cachedir,img.config.local_file_cachepath,fun)
-gmagick.run()
+>
+	--åˆå§‹åŒ–å˜é‡
+	local M = {}
+	M.imagevarobj = require("image.imagevar")
+	M.imagevarobj.init()
+	M.imagevar = M.imagevarobj.image
+	--å›¾ç‰‡å¤„ç†
+		--M.imagevarå˜é‡å‚æ•°é›†
+		--local_file_cachedirç¼“å­˜ç›®å½•
+		--local_file_cachepathç¼“å­˜æ–‡ä»¶
+		--fun åŠŸèƒ½å‡½æ•°åº“
+	local ImageConfig = {}
+	local gmagick = require("image.gmagick").new(M.imagevar,img.config.local_file_cachedir,img.config.local_file_cachepath,fun)
+	gmagick.run()
